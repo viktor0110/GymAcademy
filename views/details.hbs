@@ -1,0 +1,11 @@
+<h1>{{workout.name}}</h1>
+<img class="workout-details" src="{{workout.imageUrl}}" alt="no-img">
+<div class="details">
+    <p><span>Description:</span> {{workout.description}}</p>
+    <p><span>Difficulty level:</span> {{workout.difficultyLevel}}</p>
+    <a class="btn" href="/">Back</a>
+    {{#if isOwner}}
+    <a class="btn" href="/workout/edit/{{workout._id}}">Edit</a>
+    <a class="btn" href="/workout/delete/{{workout._id}}">Delete</a>
+    {{/if}}
+</div>

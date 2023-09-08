@@ -1,0 +1,27 @@
+<h1>Browser</h1>
+<form method="get">
+  <input type="text" class="search" name="search" value="{{search}}" placeholder="Search...">
+  <select class="search-difficulty" id="difficulty" name="difficultyLevel">
+    <option value="1">Beginner</option>
+    <option value="2">Intermediate</option>
+    <option value="3">Advanced</option>
+    <option value="4">Professional</option>
+    <option value="5">All</option>
+    <script>
+    for (const option of document.getElementById('difficulty').children) {
+          if({{fromInput}} == Number(option.value)) {
+            option.setAttribute('selected', '');
+          }     
+}
+</script>
+  </select>
+  <input id="search-btn" type="submit" value="search">
+</form>
+
+{{#if workouts}}
+{{#each workouts}}
+{{> workoutCard}}
+{{/each}}
+{{else}}
+<span class="match">There are no matches available!</span>
+{{/if}}

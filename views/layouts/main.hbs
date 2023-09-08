@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>GymAcademy</title>
+  <link href="/static/css/site.css" type="text/css" rel="stylesheet">
+  <link rel="shortcut icon" href="/static/images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <ul>
+        <li><a href="/"><img class="logo" src="/static/images/logo.png"></a></li>
+        <li><a href="/">Browse</a></li>
+        <li><a href="/about">About</a></li>
+        {{#if hasUser}}
+        <li><a href="/create">Add a Workout</a></li>
+        <li><a href="/auth/logout">Logout</a></li>
+        {{else}}
+        <li><a href="/auth/login">Login</a></li>
+        <li><a href="/auth/register">Register</a></li>
+        {{/if}}
+      </ul>
+    </header>
+    {{#if error}}
+    <div id="notifications" class="notifications">
+      {{#each error.messages}}
+      <p id="notification-message">{{this}}</p>
+      {{/each}}
+    </div>
+    {{/if}}
+    <main>
+      {{{body}}}
+    </main>
+  </div>
+  <footer>© 2023 Copyright:
+    <a class="copyright-author" href="https://www.linkedin.com/in/viktor-stefanov-953047263/">Viktor Stefanov</a>
+  </footer>
+</body>
+
+</html>

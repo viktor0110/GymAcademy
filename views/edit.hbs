@@ -1,0 +1,26 @@
+<h1>Edit Workout</h1>
+<div class="form">
+    <form action="/workout/edit/{{workout._id}}" method="POST">
+         <label for="name">Name</label>
+      <input type="text" id="name" name="name" value="{{workout.name}}">
+      <label for="name">Description</label>
+      <textarea id="name" name="description">{{workout.description}}</textarea>
+      <label for="image">ImageUrl</label>
+      <input type="text" id="image" name="imageUrl" value="{{workout.imageUrl}}">
+      <label for="difficulty">Difficulty</label>
+      <select id="difficulty" name="difficultyLevel">
+        <option value="1">Beginner</option>
+        <option value="2">Intermediate</option>
+        <option value="3">Advanced </option>
+        <option value="4">Professional </option>
+      </select>
+      <input type="submit" value="Edit">
+    </form>
+     <script>
+    for (const option of document.getElementById('difficulty').children) {
+          if({{difficulty}} == Number(option.value)) {
+            option.setAttribute('selected', 'selected');
+          }     
+}
+</script>
+</div>

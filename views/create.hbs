@@ -1,0 +1,19 @@
+<h1>Create</h1>
+<div class="form">
+        <form action='/create' method="post">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" value={{body.name}}>
+          <label for="name">Description</label>
+          <textarea id="name" name="description">{{body.description}}</textarea>
+          <label for="image">ImageUrl</label>
+          <input type="text" id="image" name="imageUrl" value={{body.imageUrl}}>
+          <label for="difficulty">Difficulty</label>
+          <select id="difficulty" name="difficultyLevel">
+            <option value="1">Beginner</option>
+            <option value="2">Intermediate</option>
+            <option value="3">Advanced </option>
+            <option value="4">Professional </option>
+          </select>
+          <input type="submit" value="Create">
+        </form>
+</div>
