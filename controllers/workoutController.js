@@ -1,9 +1,13 @@
 const { getById, updateById, deleteById } = require("../services/workoutService");
 const router = require('express').Router();
+const staticWorkouts = require('../utils/staticWorkouts');
 
 router.get('/edit/:id', async (req, res) => {
     const workoutId = req.params.id;
-    const workout = await getById(workoutId);
+    let workout = await getById(workoutId);
+    if(workout == null) {
+        workout = staticWorkouts.filter(x => x._id == workoutId)[0];
+    }
     const difficulty = workout.difficultyLevel;
     res.render('edit', {
         workout, 
@@ -27,7 +31,10 @@ router.post('/edit/:id', async (req, res) => {
 
 router.get('/delete/:id', async (req, res) => {
     const workoutId = req.params.id;
-    const workout = await getById(workoutId);
+    let workout = await getById(workoutId);
+    if(workout == null) {
+        workout = staticWorkouts.filter(x => x._id == workoutId)[0];
+    }
     const difficulty = workout.difficultyLevel;
     res.render('delete', {
         workout,

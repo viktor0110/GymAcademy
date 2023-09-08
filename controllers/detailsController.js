@@ -1,12 +1,18 @@
 const { getById } = require('../services/workoutService');
+const staticWorkouts = require('../utils/staticWorkouts');
 
 const router = require('express').Router();
 
 router.get('/:id', async (req, res) => {
     const workoutId = req.params.id;
-    const workout = await getById(workoutId);
+    
+    let workout = await getById(workoutId);
 
     let isOwner;
+
+    if(workout == null) {
+        workout = staticWorkouts.filter(x => x._id == workoutId)[0];
+    }
     
     if(workout) {
         if(req.user){
