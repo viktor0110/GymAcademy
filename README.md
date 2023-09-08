@@ -1,4 +1,4 @@
-<h2>Gym Academy</h2>
+<h2 align="center">Gym Academy</h2>
 <p align="center">
 Multi Page Application with server side rendering. 
 <br>
