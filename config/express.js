@@ -16,6 +16,7 @@ module.exports = (app) => {
     
     app.use(express.urlencoded({ extended: true }));
     app.use('/static', express.static('static'));
+    
     app.use(cookieParser());
     app.use(auth(secret));
     app.use(navUser());
