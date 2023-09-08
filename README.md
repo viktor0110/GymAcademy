@@ -1,6 +1,6 @@
 <h2 align="center">Gym Academy</h2>
 <p align="center">
-  <img align="center" src="https://github.com/viktor0110/GymAcademy/site-review/gif.gif" />
+  <img align="center" src="https://github.com/viktor0110/GymAcademy/blob/master/site-review/gif.gif" />
 </p>
 
 <p align="center">
