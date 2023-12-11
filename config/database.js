@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const connectionString = 'mongodb://127.0.0.1:27017/GymAcademy';
+const connectionString = 'mongodb://mongo:F1DDA41hb4355dBhGgDHFdhE1cHBcHhb@viaduct.proxy.rlwy.net:12855';
 
 module.exports = async (app) => {
     try {
