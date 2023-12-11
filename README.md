@@ -28,7 +28,7 @@
 ## 1. Introduction
 
 ### 1.1 Purpose
-GymAcademy is an application designed for fitness enthusiasts to discover, browse, and share workout programs. Whether you are a beginner, advanced, intermediate, or professional, GymAcademy provides a platform for users to access popular workout programs and contribute their own.
+GymAcademy is an application designed for all kind of athletes to discover, browse, and share workout programs. Whether you are a beginner, advanced, intermediate, or professional, GymAcademy provides a platform for users to access popular workout programs and contribute their own.
 
 ### 1.2 Features
 - Browse popular workout programs
@@ -89,6 +89,6 @@ Program owners have the option to delete their programs if they wish to remove t
 
 ## 6. Conclusion
 
-GymAcademy provides a comprehensive platform for all kinds of athletes to discover, contribute, and personalize their workout programs.
+GymAcademy provides a comprehensive platform for all kind of athletes to discover, contribute, and personalize their workout programs.
 
 **Dependencies:** Express, Express-validator, Handlebars, MongoDB, Mongoose, Cookie-Partser, JsonWebToken, Bcrypt.
