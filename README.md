@@ -1,6 +1,6 @@
 <h2 align="left">Gym Academy</h2>
 <br>
-<img align="left" style="margin-bottom: 50px" src="./site-review/gif.gif" />
+<img align="left" src="./site-review/gif.gif" />
 <br>
 
 
