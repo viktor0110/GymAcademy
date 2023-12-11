@@ -1,36 +1,34 @@
-<h2 align="left">Gym Academy</h2>
-<br>
-<img align="left" style="margin-bottom: 50px" src="./site-review/gif.gif" />
-<br>
+# Gym Academy
 
+![Gym Academy](./site-review/gif.gif)
 
 ## Table of Contents
 
 1. [Introduction](#1-introduction)
-   1. [Purpose](#11-purpose)
-   2. [Features](#12-features)
+   - [Purpose](#11-purpose)
+   - [Features](#12-features)
 2. [User Authentication](#2-user-authentication)
-   1. [Login](#21-login)
-   2. [Registration](#22-registration)
+   - [Login](#21-login)
+   - [Registration](#22-registration)
 3. [Workout Programs](#3-workout-programs)
-   1. [Browse Programs](#31-browse-programs)
-   2. [Add New Program](#32-add-new-program)
-   3. [Program Types](#33-program-types)
-   4. [Search Functionality](#34-search-functionality)
+   - [Browse Programs](#31-browse-programs)
+   - [Add New Program](#32-add-new-program)
+   - [Program Types](#33-program-types)
+   - [Search Functionality](#34-search-functionality)
 4. [User Roles](#4-user-roles)
-   1. [Visitor](#41-visitor)
-   2. [Authenticated User](#42-authenticated-user)
-   3. [Program Owner](#43-program-owner)
+   - [Visitor](#41-visitor)
+   - [Authenticated User](#42-authenticated-user)
+   - [Program Owner](#43-program-owner)
 5. [Program Details](#5-program-details)
-   1. [View Program Details](#51-view-program-details)
-   2. [Edit Program](#52-edit-program)
-   3. [Delete Program](#53-delete-program)
+   - [View Program Details](#51-view-program-details)
+   - [Edit Program](#52-edit-program)
+   - [Delete Program](#53-delete-program)
 6. [Conclusion](#6-conclusion)
 
 ## 1. Introduction
 
 ### 1.1 Purpose
-GymAcademy is an application designed for fitness enthusiasts to discover, browse, and share workout programs. Whether you are a beginner, advanced, intermediate, or professional, GymAcademy provides a platform for users to access popular workout programs and contribute their own.
+GymAcademy is an application designed for all kind of athletes to discover, browse, and share workout programs. Whether you are a beginner, advanced, intermediate, or professional, GymAcademy provides a platform for users to access popular workout programs and contribute their own.
 
 ### 1.2 Features
 - Browse popular workout programs
@@ -93,5 +91,4 @@ Program owners have the option to delete their programs if they wish to remove t
 
 GymAcademy provides a comprehensive platform for all kind of athletes to discover, contribute, and personalize their workout programs.
 
-Dependencies: Express, Express-validator, Handlebars, MongoDB, Mongoose, Cookie-Partser, JsonWebToken, Bcrypt.
-
+**Dependencies:** Express, Express-validator, Handlebars, MongoDB, Mongoose, Cookie-Partser, JsonWebToken, Bcrypt.
