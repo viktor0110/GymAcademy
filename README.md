@@ -1,5 +1,7 @@
 # Gym Academy
 
+**Dependencies:** Express, Express-validator, Handlebars, MongoDB, Mongoose, Cookie-Partser, JsonWebToken, Bcrypt.
+
 ![Gym Academy](./site-review/gif.gif)
 
 ## Table of Contents
@@ -91,4 +93,3 @@ Program owners have the option to delete their programs if they wish to remove t
 
 GymAcademy provides a comprehensive platform for all kind of athletes to discover, contribute, and personalize their workout programs.
 
-**Dependencies:** Express, Express-validator, Handlebars, MongoDB, Mongoose, Cookie-Partser, JsonWebToken, Bcrypt.
