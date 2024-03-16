@@ -1,6 +1,6 @@
 # Gym Academy
 
-**Dependencies:** Express, Express-validator, Handlebars, MongoDB, Mongoose, Cookie-Partser, JsonWebToken, Bcrypt.
+**Dependencies:** Express, Express-validator, Handlebars, MongoDB, Mongoose, Cookie-Parser, JsonWebToken, Bcrypt.
 
 ![Gym Academy](./site-review/gif.gif)
 
